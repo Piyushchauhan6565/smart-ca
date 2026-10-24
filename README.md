@@ -1,101 +1,101 @@
 # 📊 SMART CA — Smart Business & Accounting Assistant
 
-**An AI-powered inventory, billing, party ledger, and GST management system for businesses and accounting professionals.**
+**An AI-powered inventory, billing, party ledger, accounting, and GST management application for businesses.**
 
-SMART CA is a Python-based business management application designed to simplify everyday operations through a single dashboard.
+SMART CA is a Python-based business management application designed to simplify everyday business operations through a centralized dashboard. The project aims to bring inventory management, invoicing, accounting, and GST-related workflows into one place.
 
-## 🚀 Current Features
+## 🚀 Features
 
-- **Dashboard:** Central interface for accessing business modules.
-- **Business Profile:** Maintain business information used for billing.
-- **Inventory Management:** Manage products, prices, and stock.
+- **Dashboard:** Central access to business management modules.
+- **Business Profile:** Store business details used for billing.
+- **Inventory Management:** Manage products, prices, and stock quantities.
 - **Billing System:** Create invoices containing multiple products.
-- **GST Billing:** Calculate applicable GST for intra-state and inter-state transactions.
+- **GST Calculations:** Calculate GST for intra-state and inter-state transactions.
 - **PDF Invoices:** Generate printable invoice documents.
-- **Party Ledger:** Dedicated module for party-related records.
+- **Party Ledger:** Manage party-related records.
 - **Accounting:** Dedicated accounting module.
-- **AI Assistant:** Planned and ongoing development of business-focused assistance.
-- **GSTIN Lookup:** Integration under development to retrieve and validate buyer details through an external provider.
-
-> **Development status:** SMART CA is an MVP under active development. Some modules and integrations may be incomplete. Always verify GST details and tax calculations before issuing a real invoice.
+- **GSTIN Lookup:** Buyer GST registration lookup interface.
+- **AI Assistant:** An assistant interface for business-related questions.
 
 ## 🛠️ Technology Stack
 
-- Python
-- Streamlit
-- SQLite
-- Pandas
-- ReportLab
-- External GST verification API (integration in progress)
+- **Language:** Python
+- **User Interface:** Streamlit
+- **Database:** SQLite
+- **Data Processing:** Pandas
+- **PDF Generation:** ReportLab
 
-## 💻 Run Locally
+## 💻 Getting Started
 
 ### Prerequisites
 
-- Python installed
-- Git installed
+- Python installed on your computer
+- Git
 - Visual Studio Code (recommended)
 
-### Setup
+### Installation
 
-Clone the repository:
+1. Clone the repository:
 
-```bash
-git clone https://github.com/Piyushchauhan6565/smart-ca.git
-cd smart-ca
-```
+   ```bash
+   git clone https://github.com/Piyushchauhan6565/smart-ca.git
+   ```
 
-Create a virtual environment:
+2. Open the project directory:
 
-```bash
-python -m venv .venv
-```
+   ```bash
+   cd smart-ca
+   ```
 
-Install dependencies:
+3. Create a virtual environment:
 
-```bash
-python -m pip install streamlit pandas reportlab
-```
+   ```bash
+   python -m venv .venv
+   ```
 
-Run the application:
+4. Install the required packages used by the project:
 
-```bash
-python -m streamlit run app.py
-```
+   ```bash
+   python -m pip install streamlit pandas reportlab
+   ```
 
-Open the local URL displayed in the terminal.
+5. Run the application:
 
-## 🔐 Security
+   ```bash
+   python -m streamlit run app.py
+   ```
 
-- Never commit API keys, passwords, or private credentials.
-- Keep `.streamlit/secrets.toml` out of Git.
-- Do not upload real customer information or the local business database to a public repository.
-- Verify customer GSTIN and registration details through reliable sources.
+## 🔐 Security and Data
+
+- Keep API keys and credentials out of source control.
+- Do not commit `.streamlit/secrets.toml`, database files, or real customer data.
+- Configure external API credentials locally through Streamlit secrets.
+- Verify GST registration details through reliable sources before relying on them for business transactions.
 
 ## 🗺️ Development Roadmap
 
-- [x] Initial Python development environment
-- [x] Streamlit application interface
-- [x] SQLite database integration
-- [x] Inventory and stock deduction
-- [x] Multi-product billing
-- [x] GST calculation and PDF invoices
-- [x] Buyer GST lookup interface
-- [ ] Reliable live GSTIN verification
-- [ ] Improved party ledger and accounting workflows
-- [ ] Automated testing and validation
-- [ ] Deployment and production security improvements
+- [x] Set up the Python development environment
+- [x] Build the Streamlit application interface
+- [x] Integrate the SQLite database
+- [x] Implement inventory and stock management
+- [x] Implement multi-product billing
+- [x] Implement GST calculations and invoice PDF generation
+- [ ] Complete party ledger and outstanding balances
+- [ ] Improve live GSTIN verification and eliminate demo responses
+- [ ] Improve inventory alerts and stock history
+- [ ] Add automated tests and strengthen data protection
+- [ ] Improve documentation and user guidance
 
-## 📅 Development Updates
+*The checklist reflects the current development plan and should be updated as features are verified.*
 
-Progress will be documented through GitHub commits, Issues, and milestone updates.
+## 📌 Project Status
 
-## 👨‍💻 Maintainer
+SMART CA is under active development. Features and integrations are being improved and tested as the project progresses.
 
-**Piyush Chauhan**
+## 🤝 Contributing
 
-GitHub: [@Piyushchauhan6565](https://github.com/Piyushchauhan6565)
+Suggestions, bug reports, and feature requests are welcome. Please open an issue in the GitHub repository to discuss an improvement.
 
----
+## 📄 License
 
-*SMART CA is an ongoing learning and development project. Features and workflows may change as development progresses.*
+A license has not yet been specified. All rights are reserved by default unless a license is added to this repository.
