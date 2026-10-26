@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# SMART CA local data and secrets
+*.db
+*.db-journal
+.streamlit/secrets.toml
+.env
